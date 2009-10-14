@@ -46,7 +46,7 @@ AC_ARG_ENABLE(debug,
 	[  --enable-debug          enable debugging],,
         enable_debug=no)
 if test "x$enable_debug" = "xyes"; then
-        CFLAGS="$CFLAGS -g -Wall -Werror"
+        CFLAGS="$CFLAGS -g -Wall -Werror -fno-strict-aliasing"
 fi
 
 # Gtk-doc
